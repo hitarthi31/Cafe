@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+body{
+    margin: 0;
+    background-color: black;
+}
+.container h2{
+    font-family: 'Dancing Script';
+}
+.coffee img, .dessert img, .food img{
+    border: 5px solid #ffb473;
+    box-shadow: 6px 6px 6px #ffb473;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 136, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    padding: 0px 155px;
+    font-size: 25px;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+.Menu h1{
+    color: rgb(255, 136, 0);
+    align-items: center;
+    text-align: center;
+    margin: 0px 14px;
+    font-size: 50px;
+    font-family: 'Yeon Sung', cursive;
+}
+.food, .coffee, .dessert{
+    display: flex;
+    flex-direction: row;
+}
+.food img, .coffee img{
+    margin: 33px 145px;
+}
+.dessert img{
+    margin: 30px 112px;
+}
+#img6{
+    margin-top: 154px ;
+}
+#img1{
+    height: 700px;
+    width: 500px;
+}
+#img2{
+    margin-top: 84px;
+    height: 500px;
+    width: 500px;
+}
+.desc1{
+    display: none;
+}
+.food1:hover + .desc1{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top:60%;
+    left:23%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 200px;
+    width: 120px;
+}
+.food2:hover + .desc1{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top:60%;
+    left:73%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+
+.desc2{
+    display: none;
+}
+.coffee1:hover + .desc2{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 161%;
+    left: 23%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+.coffee2:hover + .desc2{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 161%;
+    left: 73%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+.desc3{
+    display: none;
+}
+.dessert1:hover + .desc3{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 278%;
+    left: 20%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 200px;
+    width: 120px;
+}
+.dessert2:hover + .desc3{
+    display: block;
+    color: rgb(255, 136, 0);
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 289%;
+    left: 65%;
+    font-size: 23px;
+    padding: 35px 0px;
+    text-align: center;
+    height: 200px;
+    width: 120px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        margin: 0;
+    }
+    nav{
+        width: 799px;
+    }
+    a{
+        padding: 0px 65px;
+        font-size: 26px;
+    }
+    .food, .coffee, .dessert{
+        display: block;
+    }
+    .desc1, .desc2, .desc3{
+        display: none;
+    }
+    .food img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    }
+    .food1:hover + .desc1{
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top:80%;
+        left:100%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 200px;
+        width: 120px;
+    }
+    .food2:hover + .desc1
+    {
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top:250%;
+        left:100%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+    }
+    .coffee1:hover + .desc2{
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top: 407%;
+        left: 107%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+    }
+    .coffee2:hover + .desc2{
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top: 585%;
+        left: 107%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+    }
+    .dessert1:hover + .desc3{
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top: 790%;
+        left: 107%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 199px;
+        width: 120px;
+    }
+    .dessert2:hover + .desc3{
+        display: block;
+        color: rgb(255, 136, 0);
+        position: absolute;
+        background-color: black;
+        opacity: 0.6;
+        top: 980%;
+        left: 107%;
+        font-size: 23px;
+        padding: 35px 0px;
+        text-align: center;
+        height: 199px;
+        width: 120px;
+    }
+    .dessert img, .food img{
+        margin-left: 134px;
+        border: 5px solid #ffb473;
+        box-shadow: 6px 6px 6px #ffb473;
+    }
+    .coffee img{
+        border: 5px solid #ffb473;
+        box-shadow: 6px 6px 6px #ffb473;
+    }
+    .Menu h1{
+        padding-left: 351px;
+        padding-top: 10px;
+        color: rgb(255, 136, 0);
+        align-items: center;
+        text-align: center;
+        margin: 0px 14px;
+        font-size: 30px;
+        font-family: 'Yeon Sung', cursive;
+    }
+
+    #img5{
+        margin-top: 30px;
+    }
+    #img6{
+        margin-top: 30px;
+    }
+}

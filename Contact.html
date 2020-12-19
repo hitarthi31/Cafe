@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+.navbar-brand h2{
+  font-family: 'Dancing Script', cursive;
+  
+}
+#navbarResponsive{
+    text-align:center;
+}
+
+
+body
+{
+	background-color: black;
+}
+@media screen and (min-width: 600px){
+ 	 #Contact form
+    {
+      color: white;
+      font-size: 20px;
+      padding-left: 40%;
+
+    }
+    
+
+    #Contact p
+    {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      font-style: italic;
+
+    }
+
+    input[type="text"]
+    {
+      width: 300px;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    input[type="Date"]
+    {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      height: 30px;
+    }
+    input[type="Time"]
+    {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100px;
+      height: 30px;
+    }
+    input[type="submit"]
+    {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      width: 150px;
+      height: 40px;
+    }
+
+
+
+  }
+
+@media screen and (max-width: 600px) {
+  
+	  #Contact p{
+      font-size: 20px;
+      color: white;
+    }
+    #Contact{
+      color: white;
+    }
+    #Contact form{
+      padding-left: 20px;
+    }
+    input[type="text"]
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    input[type="submit"]
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      width: 120px;
+      height: 30px;
+    }
+    input[type="Date"]
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    input[type="Time"]
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #Contact p
+    {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-style: italic;
+
+    }
+    
+}
+ 	</style>
+<script type="text/javascript">
+    function validate(){
+    if(document.f1.Name.value == " "){
+      alert("Please fill your Name");
+      return false;
+    }
+    if(document.f1.How_many_people.value == " "){
+      alert("Please fill this field");
+      return false;
+    }
+    if(document.f1.Select_date == " "){
+      alert("Please fill this field");
+      return false
+    }
+    return true;
+}
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <h2>Cafe</h2>
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home
+              
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+         
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Menu.html">Menu</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Contact">Contact</a>
+           <span class="sr-only">(current)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="Contact">
+		<!-- Contact us -->
+		<p>Contact Us</p>
+		<div class="CU">
+			<p>Find us at some address at some place or call us at 9231455201<br> <b>FYI</b> We offer full-service catering for any event, large or small.We understand your needs and we cater the food to satisfy the biggest criteria of them all,both look and taste</p>
+	    </div>
+	 <div>
+	 	<p> Reserve a table </p>
+	<form name="f1" action="form.php" method="post" onsubmit="return validate()">
+		<label for="Name" >Name:</label><br>
+			<input type="text" placeholder="Name" name="Name" id="Name"><br>
+		<label for="How_many_people">How many people:</label><br>
+			<input type="text" placeholder="3" name="How_many_people" id="How_many_people"><br>
+		<label for="Select_date_and_time">Date:</label><br>
+			<input type="Date" name="Select_date" id="Select_date_and_time" >
+			<br>
+		<label for="Requirements">Special Requirements</label><br>
+		<input type="text" name="Requirements" id="Requirements" placeholder="Your Requirements"> <br>
+		<input type="submit" value="Send Message" style="color: black;">
+	</form>
+    </div>
+	</div>
+  
+</body>
+</html>

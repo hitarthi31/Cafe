@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body {
+      background-color: black;
+    }
+#navbarResponsive{
+    text-align:center;
+}
+    @media only screen and (min-width: 600px) {
+      #About h1 {
+        text-align: center;
+        color: white;
+      }
+      
+    /*.navbar{
+        padding:35px;
+        
+    }
+    .nav-item {
+        font-size:45px;
+    }
+    .navbar-brand h2{
+        font-size:60px;
+    }*/
+      .about {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .about p {
+        padding-top: 13px;
+        float: left;
+        padding-left: 50px;
+        color: white;
+        width: 32%;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 23px;
+        font-family: 'Courgette', cursive;
+
+
+      }
+
+      .about img {
+
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-left: 50px;
+        width: 1000px;
+        height: 620px;
+      }
+      
+
+    }
+    
+
+    .navbar-brand h2 {
+      font-family: 'Dancing Script', cursive;
+
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1500px) {
+      .about {
+        display: block;
+      }
+
+      .about p {
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Courgette', cursive;
+
+      }
+
+      .about img {
+        width: 100%;
+        height: 100%;
+      }
+         .navbar{
+        padding:35px;
+        
+    }
+    .nav-item {
+        font-size:45px;
+    }
+    .navbar-brand h2{
+        font-size:60px;
+    }
+
+
+
+
+
+    }
+
+    @media only screen and (max-width: 600px) {
+      #About h1 {
+        text-align: center;
+        color: white;
+      }
+
+      .about {
+        display: block;
+      }
+
+      .about p {
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 18px;
+        font-family: 'Courgette', cursive;
+
+      }
+
+      .about img {
+        width: 100%;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h2>Cafe</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+
+            </a>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link" href="#About">About</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="About">
+    <!-- About-->
+    <h1>About</h1>
+
+  </div>
+  <div class="about">
+    <p>Welcome to the cafe.In 2006 this cafe was created with the idea to provide best food to everyone. We believe that
+      nobody should settle for less than what they expect and at our cafe expectations are fulfilled.We provide the
+      finest coffees at our place. Our mission is to engage people with an immensely satisfying experience. From early
+      morning espresso, midday brunch, this bustling landmark specialises in being whatever you want it to be.Our menu
+      items are made in house,to order, with fresh and natural ingredients.We exist to use our God-given gifts to
+      support the local community through exceptional products, steadfast customer service, and uncompromised integrity.
+    </p>
+    <img
+      src="https://images.unsplash.com/photo-1599579134411-bd068f77d4d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
+
+  </div>
+
+  </div>
+
+
+</body>
+
+</html>
